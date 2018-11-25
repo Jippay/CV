@@ -10,14 +10,17 @@
     <title>Mon CV</title>
 </head>
     <header>
+        <div id="boutonFond">
             <div id="btn">
                     <div id='top'></div>
                     <div id='middle'></div>
                     <div id='bottom'></div>
             </div>
+        </div>
             <div id="box">
                     <div id="items">
                             <div class="item"><a href="#about">Accueil</a></div>
+                            <div class="item"><a href="#competences">Competences</a></div>
                             <div class="item"><a href="#experiences">Experiences</a></div>
                             <div class="item"><a href="#formations">Formations</a></div>
                             <div class="item"><a href="#loisirs">Loisirs</a></div>
@@ -33,6 +36,32 @@
         </div>
     </header>
 <body>
+<section id="competences">
+        <div class="titreCompetences">
+            <h2>Compétences<h2>
+        </div>
+        <div class="contenucompetences">
+            <div class="Content">
+                <h2>Programmation</h2>
+                <p>Html</p>
+                <p>css</p>
+                <p>javascript</p>
+                <p>php</p>
+            </div>
+            <div class="Content">
+                <h2>Logiciels</h2>
+                <p>IDE</p>
+                <p>Linux, Windows</p>
+                <p>Adobe XD, Photoshop, Illustrator</p>
+                <p>Suite Office, libreOffice</p>
+            </div>
+            <div class="Content">
+                <h2>Gestion de projet</h2>
+                <p>zoning, wireframe, mockup</p>
+                <p>spécifications techniques et fonctionnelles</p>
+            </div>
+        </div>
+    </section>
     <section id="experiences">
         <div class="containerXp">
             <div class="titreXp">
@@ -58,7 +87,6 @@
                         <p class="lieu"><i class="fas fa-map-marker-alt"></i>CGR Bourges</p>
                         <p class="acte">Encaissement</p>
                         <p class="acte">Comptage de caisses</p>
-                        <p class="acte">Gestion des rayons</p>
                     </div>
                 </div>
                 <div class="container left">
@@ -102,9 +130,6 @@
                 <p class="lieuForm">AFORMAC Bourges (18000)</p>
             </div>
         </div>
-    </section>
-    <section class="competences">
-
     </section>
     <section id="loisirs">
         <div class="titreLoisirs">
