@@ -27,6 +27,7 @@
                             <div class="item"><a href="#formulaire">Contact</a></div>
                     </div>
             </div>
+        <div class="btnTop" id="myBtn" title="Go to top"><a href="#about"><i class="fas fa-arrow-up"></i></i></a></div>
         <div id="about">
             <div class="imageRonde">
                 <img class="avatar1" alt="photo avatar" src="img/Moi.jpg"> 

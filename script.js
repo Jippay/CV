@@ -1,7 +1,8 @@
+///menu burger animation//
 const sidebarBox = document.querySelector('#box'),
 	sidebarBtf = document.querySelector('#boutonFond'),
         sidebarBtn = document.querySelector('#btn');
-
+	btnTop = document.querySelector('#myBtn');
 
 sidebarBtn.addEventListener('click', event => {
 	sidebarBtn.classList.toggle('active');
@@ -9,6 +10,14 @@ sidebarBtn.addEventListener('click', event => {
         sidebarBox.classList.toggle('active');
 });
 
+btnTop.addEventListener('click', event => {
+
+        if (sidebarBox.classList.contains('active')) {
+                sidebarBtn.classList.remove('active');
+		sidebarBox.classList.remove('active');
+		sidebarBtf.classList.remove('active');
+        }
+});
 
 
 window.addEventListener('keydown', event => {
@@ -19,7 +28,29 @@ window.addEventListener('keydown', event => {
                 sidebarBox.classList.remove('active');
         }
 });
-/////
+
+
+/**Bouton retour en haut */
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+/*
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} */
+
+
+/////mouvement scroll fluide////
 var a = document.querySelectorAll("a[href^='#']");
 
 var duration = 800;

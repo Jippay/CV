@@ -9,6 +9,7 @@ html{
     background-color: #cac8c8; 
 
 }
+
 /**********************************about*******************/
 header{
     height: 20em;
@@ -408,7 +409,8 @@ footer{
     height : 3em;
     position: fixed;
     z-index: 5;
-    top: 8px;
+    /*top: 8px;*/
+    bottom : 15px;
     left: 9px;
     cursor: pointer;
     transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
@@ -417,8 +419,9 @@ footer{
 #btn {
     position: fixed;
     z-index: 5;
-    top: 21px;
+    /*top: 21px;*/
     left: 15px;
+    bottom: 27px;
     cursor: pointer;
     transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
 
@@ -502,7 +505,37 @@ a{
   #box {
     will-change: transform, opacity;
   }
-/****Media Queries***********************/
+
+
+/*****bouton retour en haut***********/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 50%; /* Rounded corners */
+    box-shadow: 0 2px 15px #585858;
+    width: 3em;
+    height : 3em;
+}
+
+#myBtn i{
+    font-size: 1.5em;
+    margin-top: 11px;
+    margin-left: 14px;
+}
+/*#myBtn:hover {
+    box-shadow: 0 2px 15px #585858;; /* Add a dark-grey background on hover
+}*/
+
+
+/***************************Media Queries***********************/
 @media all and (min-width: 900px) and (max-width: 2000px)
 {
     header{
@@ -521,6 +554,7 @@ a{
         width : 30em;
         height : 30em;
     }
+    /**********competences**********/
     .titreCompetences{
         padding-top:2em;
     }
@@ -532,7 +566,7 @@ a{
     .Content{
         width: 30%;
     }
-
+    /********timeline*************/
     .lieu{
         font-size: 1.2em;
     }
@@ -542,7 +576,7 @@ a{
     .contenu > h2{
         font-size: 1.5em;
     }
-
+    /**********formations***************/
     #formations{
         margin: 3em;
     }
@@ -562,7 +596,7 @@ a{
     .contDroite{
         width: 30%;
     }
-
+    /************loisir****************/
     .titreLoisirs{
         margin: 3em 0;
     }
@@ -575,9 +609,28 @@ a{
     .containerImg {
         width: 20%;
     }
+    /*********formulaire********/
     .form{
         width: 700px;
     }
+
+    /*********burger*********/
+    #btn #top , #middle {
+        width: 35px;
+        height: 2px;
+        margin-bottom: 8px;
+        background-color: #f80707;
+        transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, background-color 250ms;
+    }
+    #boutonFond{
+        top: 8px;
+    }
+
+    #btn {
+        top: 21px;
+
+    }
+
 }
 
 
