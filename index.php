@@ -28,6 +28,10 @@
                     </div>
             </div>
         <div class="btnTop" id="myBtn" title="Go to top"><a href="#about"><i class="fas fa-arrow-up"></i></i></a></div>
+        <div class="liens">
+            <div class="cvPaper"><a href="img/cvJPG2018.pdf" target="_blank"><p>Téléchargez mon CV</p></a></div>
+            <div class="gitHub"><a href="https://github.com/dcl-jipay" target="_blank"><img src="img/logo-github.png" alt="logo github"></a></div>
+        </div>
         <div id="about">
             <div class="imageRonde">
                 <img class="avatar1" alt="photo avatar" src="img/Moi.jpg"> 

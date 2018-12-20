@@ -15,6 +15,51 @@ header{
     height: 20em;
 }
 
+
+.cvPaper{
+    width : 10em;
+    height : 4em;
+    border : 2px solid rgb(111, 165, 246);
+    border-radius : 10px;
+    position : absolute;
+    z-index: 5;
+    top : 50px;
+    right : 25px;
+}
+
+.cvPaper p{
+    text-align: center;
+    font-size : 1em;
+    line-height: 4em;
+}
+
+.cvPaper:hover{
+    background-color: #d62929;
+    border : 2px solid #f59090;
+    box-shadow: 0 0 10px #585858;
+}
+.cvPaper p:hover{
+    color: #f6f6f6;
+}
+.gitHub{
+    width : 10em;
+    height : 4em;
+    border : 2px solid rgb(111, 165, 246);
+    border-radius : 10px;
+    position : absolute;
+    z-index: 5;
+    top : 130px;
+    right : 25px;
+}
+.gitHub img{
+    width:100%;
+}
+.gitHub:hover{
+    background-color: #28a745;
+    border : 2px solid #34d058;
+    box-shadow: 0 0 10px #585858;
+}
+
 #about{
     display: flex;
     flex-direction: column;
@@ -47,7 +92,7 @@ h1, h3{
 }
 /*****************compétences***********************/
 #competences{
-    background-color: #e67373;
+    background-color: #00897B;
 }
 .titreCompetences{
     text-align: center;
@@ -69,6 +114,9 @@ h1, h3{
     border-radius : 10px;
     padding:1em;
     margin : 1em;
+}
+.Content:hover{
+    box-shadow : 0 0 10px white;
 }
 .Content h2{
     margin: 10px 0;
@@ -539,20 +587,31 @@ a{
 @media all and (min-width: 900px) and (max-width: 2000px)
 {
     header{
-        height: 50em;
+        height: 40em;
     }
 
     header h1 {
-        font-size: 5em;
+        font-size: 3.5em;
         padding-top : 0.7em;
     }
     header h3{
-        font-size: 3em;
+        font-size: 2.5em;
         padding-top : 0.7em;
     }
     .imageRonde{
-        width : 30em;
-        height : 30em;
+        width : 20em;
+        height : 20em;
+    }
+
+    .cvPaper{
+        width : 10em;
+        height : 4em;
+        right : 150px;
+    }
+    .gitHub{
+        width : 10em;
+        height : 4em;
+        right : 150px;
     }
     /**********competences**********/
     .titreCompetences{
