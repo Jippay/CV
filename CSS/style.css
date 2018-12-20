@@ -12,9 +12,8 @@ html{
 
 /**********************************about*******************/
 header{
-    height: 20em;
+    height: 25em;
 }
-
 
 .cvPaper{
     width : 10em;
@@ -23,7 +22,7 @@ header{
     border-radius : 10px;
     position : absolute;
     z-index: 5;
-    top : 50px;
+    top : 300px;
     right : 25px;
 }
 
@@ -48,8 +47,8 @@ header{
     border-radius : 10px;
     position : absolute;
     z-index: 5;
-    top : 130px;
-    right : 25px;
+    top : 300px;
+    right : 200px;
 }
 .gitHub img{
     width:100%;
@@ -604,14 +603,20 @@ a{
     }
 
     .cvPaper{
+        position : absolute;
         width : 10em;
         height : 4em;
+        top : 150px;
         right : 150px;
+        z-index: 5;
     }
     .gitHub{
+        position : absolute;
         width : 10em;
         height : 4em;
+        top : 250px;
         right : 150px;
+        z-index: 5;
     }
     /**********competences**********/
     .titreCompetences{
