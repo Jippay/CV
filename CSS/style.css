@@ -21,7 +21,6 @@ header{
     border : 2px solid rgb(111, 165, 246);
     border-radius : 10px;
     position : absolute;
-    z-index: 5;
     top : 300px;
     right : 25px;
 }
@@ -46,7 +45,7 @@ header{
     border : 2px solid rgb(111, 165, 246);
     border-radius : 10px;
     position : absolute;
-    z-index: 5;
+
     top : 300px;
     right : 200px;
 }
@@ -523,6 +522,7 @@ footer{
   #box.active {
     left: 0px;
     opacity: 1;
+    z-index: 99;
   }
   #items {
     position: relative;
@@ -608,7 +608,7 @@ a{
         height : 4em;
         top : 150px;
         right : 150px;
-        z-index: 5;
+
     }
     .gitHub{
         position : absolute;
@@ -616,7 +616,7 @@ a{
         height : 4em;
         top : 250px;
         right : 150px;
-        z-index: 5;
+
     }
     /**********competences**********/
     .titreCompetences{
